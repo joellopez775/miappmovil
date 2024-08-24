@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'luna',
+    loadChildren: () => import('./luna/luna.module').then( m => m.LunaPageModule)
+  },
 ];
 
 @NgModule({

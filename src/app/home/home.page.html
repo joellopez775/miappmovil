@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title id="titulin">
+      Mi App Movil 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,52 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+
+    <strong>Bienvenido a mi app movil</strong>
+    <ion-card>
+      <img src="{{caricatura.img}}">
+
+
+    </ion-card>
+    <p>SI quieres saber más haz click <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">aquí</a></p>
+
+
+
+    <ion-card-header id="titulin">El nombre del usuario es {{user.usuario}}</ion-card-header>
+    <ion-card-header id="titulin">La contraseña del usuario es {{user.password}}</ion-card-header>
+
+    <ion-card-header id="titulin">Login</ion-card-header>
+
+    <ion-card>
+      <ion-input type="text" [(ngModel)]="user.usuario">Usuario</ion-input>
+
+    </ion-card>
+      <ion-card>
+  
+        <ion-input type="password" [(ngModel)]="user.password">Contraseña</ion-input>
+      </ion-card>
+        <ion-card>
+          <ion-card>
+            <ion-button shape="round" (click)="validarUsuario()">Entrar</ion-button>
+            <br>
+          </ion-card>        <br>
+    </ion-card>
   </div>
+  <br>
+  
+   <div>
+   
+   </div>
+
+
+
+
+
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+<ion-title></ion-title>
+
+  </ion-toolbar>
+</ion-footer>
